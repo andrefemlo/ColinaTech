@@ -14,6 +14,7 @@ module.exports = {
     extend: {
       colors: {
         "colina-400": "#1ACDB8",
+        "colina-500": "#14A797",
         "colina-700": "#1d1e22",
         "colina-900": "#0a0b0b"
       },

@@ -10,7 +10,7 @@
         <span class="text-colina-400">Escale suas vendas</span><br> a partir do marketing digital
       </h1>
       <p class=" pr-14">Acredita que sua empresa pode ter melhores resultados no Marketing Digital?<br>Entre em contato e tenha uma sessão estratégica <span class="text-colina-400 font-semibold">grátis</span> com um dos diretores da Colina Tech.</p>
-      <a href="#" class="py-3 px-16 bg-colina-400 rounded-xl font-semibold text-lg">Agendar Agora</a>
+      <a href="#" class="py-3 px-16 bg-gradient-to-b from-colina-400 to-colina-500 rounded-xl font-semibold text-lg">Agendar Agora</a>
     </div>
     <div class="w-[65%] flex items-center">
       <img src="<?php echo get_template_directory_uri(); ?>/src/images/image-hero.png" alt="hero image" class="w-full h-full">
@@ -28,7 +28,7 @@
   <p class="text-center text-base">A partir disso, quando já tivermos todos os materiais necessários para nossa escalada, é hora de começar a caminhada!<br>
   Aqui cada trilha é única. Descubra a sua agora!
   </p>
-  <a href="#" class="py-3 px-16 bg-colina-400 rounded-xl font-semibold text-lg">Quero descobrir</a>
+  <a href="#" class="py-3 px-16 bg-gradient-to-b from-colina-400 to-colina-500 rounded-xl font-semibold text-lg">Quero descobrir</a>
 </section>
 
 <section class="w-full min-h-[90dvh] mt-4 relative">
@@ -40,7 +40,7 @@
       <p class="my-6">Significa que o nosso objetivo de fato é gerar resultados mensuráveis e que possam comprovar o ROI (Return of Investment) das nossas ações. O que não é medido, não pode ser gerenciado.<br><br> 
       Por isso, trabalhamos com escopos de serviços que conseguimos realmente acompanhar e monitorar toda a jornada do usuário/ lead para garantir que ele realize as conversões necessárias.<br><br> 
       Temos reuniões semanais com clientes para acompanhar seus <strong>resultados de verdade: as vendas!</strong></p>
-      <a href="#" class="py-3 px-16 bg-colina-400 rounded-xl font-semibold text-lg text-neutral-50 shadow-lg">Agende agora sua sessão estratégica grátis</a>
+      <a href="#" class="py-3 px-16 bg-gradient-to-b from-colina-400 to-colina-500 rounded-xl font-semibold text-lg text-neutral-50 shadow-lg">Agende agora sua sessão estratégica grátis</a>
     </div>
     <div class="w-[40%] absolute bottom-0 right-0">
         <img src="<?php echo get_template_directory_uri(); ?>/src/images/lucas-ceo.png" alt="Foto de Lucas Trindade, o Ceo da Colina Tech." class="w-[80] h-auto object-cover">
@@ -144,43 +144,24 @@
 </section>
 
 <section class="flex flex-row h-[80dvh] bg-colina-700 border-t-neutral-600 border-t items-center justify-around">
-  <div class="flex flex-col items-start justify-start space-y-16 w-[35%] pl-[10dvw]">
+  <div class="flex flex-col items-start justify-start space-y-16 w-[50dvw] px-[12dvw]">
     <h2 class="font-semibold text-4xl text-neutral-50">
       O que nossos clientes falam sobre nós?
     </h2>
-    <a href="#" class="z-10 py-3 px-9 text-neutral-100 rounded-xl bg-colina-400 font-semibold shadow-lg">Fale com um especialista</a>
+    <a href="#" class="z-10 py-3 px-9 text-neutral-100 rounded-xl bg-gradient-to-b from-colina-400 to-colina-500 font-semibold shadow-lg">Fale com um especialista</a>
   </div>  
-  <div class="flex flex-col items-start justify-start space-y-16 w-[65%]">
-  <div class="bg-neutral-300 h-full w-full">
-      <span>TESTEMUNHAS</span>
-    </div>
+  <div class="flex flex-col items-start justify-start space-y-16 w-[50dvw] pr-[10dvw]">
+      <?php echo get_template_part('template-parts/testimonies'); ?>
   </div>  
 </section>
 
-<section class="flex flex-col h-[80dvh] bg-colina-900 items-center justify-around">
+<!-- <section class="flex flex-col h-[80dvh] bg-colina-900 items-center justify-around">
   <h2 class="font-semibold text-4xl text-colina-400">
     Como será sua jornada após o formulário?
   </h2>
   <div class="flex w-[80%] space-x-32 items-stretch justify-center">
-    <div class="flex flex-col justify-center items-center w-1/8">
-      <img src="<?php echo get_template_directory_uri(); ?>/src/images/google_icon.png" alt="" class="w-auto h-[72px] mb-6">
-      <h4 class="font-semibold text-neutral-50 text-3xl text-center">Google<br>Partner</h4>
-    </div>
-    <div class="flex flex-col justify-center items-center w-1/8">
-      <img src="<?php echo get_template_directory_uri(); ?>/src/images/active_campaing_icon.png" alt="" class="w-auto h-[72px] mb-6">
-      <h4 class="font-semibold text-neutral-50 text-3xl text-center">ActiveCampaing<br>Partner</h4>
-    </div>
-    <div class="flex flex-col justify-center items-center w-1/8">
-      <img src="<?php echo get_template_directory_uri(); ?>/src/images/group_icon.png" alt="" class="w-auto h-[72px] mb-6">
-      <h4 class="font-semibold text-neutral-50 text-3xl text-center">Equipe<br>Multidisciplinar</h4>
-    </div>
-    <div class="flex flex-col justify-center items-center w-1/8">
-      <img src="<?php echo get_template_directory_uri(); ?>/src/images/many_chat_icon.png" alt="" class="w-auto h-[72px] mb-6">
-      <h4 class="font-semibold text-neutral-50 text-3xl text-center">ManyChat<br>Partner</h4>
-    </div>
   </div>
-  <a href="#" class="z-10 py-3 px-16 text-neutral-100 rounded-xl bg-colina-400 font-semibold text-lg shadow-lg">Agendar Agora</a>
-</section>
+</section> -->
 
 <section class="flex bg-colina-900 min-h-[90dvh] bg-wrect bg-no-repeat bg-right-top-4 bg-cover">
   <div class="flex flex-col w-6/12 min-h-[90dvh] items-start justify-center pl-[10dvw] mt-12">
@@ -222,7 +203,7 @@
         </h4>
       </li>
     </ul>
-    <a href="#" class="py-3 px-16 mt-12 text-neutral-100 rounded-xl bg-colina-400 font-semibold text-lg shadow-xl">
+    <a href="#" class="py-3 px-16 mt-12 text-neutral-100 rounded-xl bg-gradient-to-b from-colina-400 to-colina-500 font-semibold text-lg shadow-xl">
       Agendar reunião
     </a>
   </div>
@@ -373,8 +354,6 @@
   <img class="absolute bottom-0 left-[12rem]" src="<?php echo get_template_directory_uri(); ?>/src/images/blue-rect.png" alt="">
   <img class="absolute -bottom-[456px] -left-[592px]" src="<?php echo get_template_directory_uri(); ?>/src/images/white-rect.png" alt="">
 </section>
-
-<?php echo get_template_part('template-parts/services'); ?>
 
 </main>
 <?php get_footer(); ?>

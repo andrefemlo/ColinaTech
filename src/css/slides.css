@@ -3,3 +3,12 @@
     align-content: center !important;
     justify-content: center !important;   
 }
+.slick-dots li.slick-active button::before{
+    color: #1ACDB8 !important;
+    opacity: 1;
+}
+.slick-dots li button::before{
+    font-size: 12px;
+    color: #f5f5f5;
+    opacity: 1;
+}
