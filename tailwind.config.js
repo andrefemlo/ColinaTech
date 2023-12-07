@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     backgroundPosition: {
       'bottom-4': 'center bottom 1rem',
-      'top-4': 'center top 1rem',
+      'top-4': 'right 1rem top 3rem',
       'right-top-4': 'right top 3rem'
     },
     fontFamily: {

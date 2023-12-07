@@ -1,82 +1,87 @@
 <!-- npx tailwindcss -i ./tailwind.css -o ./style.css --watch -->
 <?php get_header(); ?>
 
-<main class="text-lg overflow-hidden">
+<main class="text-lg overflow-hidden w-[100dvw]">
 
-<section class="bg-colina-900 w-full min-h-[100dvh] flex items-center bg-bg-hero bg-no-repeat bg-cover">
-  <div class="hero flex m-auto p-4 w-[90%] h-full">
-    <div class="flex flex-col w-[45%] items-start justify-around text-neutral-50 pl-16 pt-8">
-      <h1 class="text-5xl font-bold leading-[120%]">
-        <span class="text-colina-400">Escale suas vendas</span><br> a partir do marketing digital
+<section class="bg-colina-900 min-h-screen flex flex-col md:flex-row items-center justify-center bg-bg-hero bg-no-repeat bg-cover">
+  <div class="flex flex-col lg:flex-row mx-4 max-w-7xl items-center justify-center text-neutral-50">
+    <div class="flex flex-col max-w-1/2 items-center min-h-[60%] lg:items-start justify-center lg:space-y-16 space-y-4">
+      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold lg:leading-[120%] text-center lg:text-start" data-aos="fade-up">
+      <span class="text-colina-400">Escale suas vendas</span><br> a partir do marketing digital
       </h1>
-      <p class=" pr-14">Acredita que sua empresa pode ter melhores resultados no Marketing Digital?<br>Entre em contato e tenha uma sessão estratégica <span class="text-colina-400 font-semibold">grátis</span> com um dos diretores da Colina Tech.</p>
-      <a href="#" class="py-3 px-16 bg-gradient-to-b from-colina-400 to-colina-500 rounded-xl font-semibold text-lg">Agendar Agora</a>
+      <p class="text-center lg:text-start" data-aos="fade-up">Acredita que sua empresa pode ter melhores resultados no Marketing Digital?<br>Entre em contato e tenha uma sessão estratégica <span class="text-colina-400 font-semibold">grátis</span> com um dos diretores da Colina Tech.</p>
+      <a href="#" class="py-3 px-16 bg-gradient-to-b from-colina-400 to-colina-500 rounded-xl font-semibold" data-aos="fade-up">Agendar Agora</a>
     </div>
-    <div class="w-[65%] flex items-center">
-      <img src="<?php echo get_template_directory_uri(); ?>/src/images/image-hero.png" alt="hero image" class="w-full h-full">
-    </div>
+    <img class="w-full sm:w-3/4 h-fit mt-8 lg:my-auto" src="<?php echo get_template_directory_uri(); ?>/src/images/image-hero.png" alt="hero image" class="w-full h-full">
   </div>
 </section>
 
-<section class="min-h-[100dvh] flex flex-col bg-colina-900 items-center justify-evenly py-8 text-neutral-50 ">
-  <h2 class="text-4xl text-colina-400 font-semibold">Como garantimos resultados?</h2>
-  <p class="text-center"><span class="font-semibold">Com nosso onboarding e ongoing!</span><br>
-  Nossa escalada começa com a elaboração de processos importantes, são eles:</p>
-  <div class="flex flex-col w-[80%]">
-    <?php echo get_template_part('template-parts/services'); ?>
+<section class="h-[100dvh] flex flex-col bg-colina-900 items-center justify-center text-neutral-50 ">
+  <div class="h-[100dvh] flex flex-col items-center justify-evenly py-8 text-neutral-50 w-screen lg:max-w-7xl">
+    <h2 class="text-4xl text-colina-400 font-semibold sm:text-start text-center">Como garantimos resultados?</h2>
+    <p class="text-center"><span class="font-semibold">Com nosso onboarding e ongoing!</span><br>
+    Nossa escalada começa com a elaboração de processos importantes, são eles:</p>
+    <div class="flex flex-col w-[80%]" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+      <?php echo get_template_part('template-parts/services'); ?>
+    </div>
+    <p class="text-center text-base">A partir disso, quando já tivermos todos os materiais necessários para nossa escalada, é hora de começar a caminhada!<br>
+    Aqui cada trilha é única. Descubra a sua agora!
+    </p>
+    <a href="#" class="py-3 px-16 bg-gradient-to-b from-colina-400 to-colina-500 rounded-xl font-semibold text-lg">Quero descobrir</a>
   </div>
-  <p class="text-center text-base">A partir disso, quando já tivermos todos os materiais necessários para nossa escalada, é hora de começar a caminhada!<br>
-  Aqui cada trilha é única. Descubra a sua agora!
-  </p>
-  <a href="#" class="py-3 px-16 bg-gradient-to-b from-colina-400 to-colina-500 rounded-xl font-semibold text-lg">Quero descobrir</a>
 </section>
 
-<section class="w-full min-h-[90dvh] mt-4 relative">
-  <div class="min-h-[90dvh] flex flex-col justify-around">
-    <div class="flex flex-col w-1/2 pl-[12%] items-start justify-center my-12">
-      <h1 class="text-4xl font-bold leading-[120%]">
-          <span class="text-colina-400">Somos uma agência data driven marketing!</span> E o que isso significa?
+
+<section class="mt-4 flex flex-col lg:flex-row justify-center">
+  <div class="min-h-[90dvh] 2xl:w-screen flex flex-col lg:flex-row items-center justify-center">
+
+    <div class="flex flex-col w-full p-[4dvw] items-start justify-center my-12 lg:mx-0" data-aos="fade-right" data-aos-delay="300">
+      <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold leading-[120%]">
+        <span class="text-colina-400">Somos uma agência data driven marketing!</span> E o que isso significa?
       </h1>
-      <p class="my-6">Significa que o nosso objetivo de fato é gerar resultados mensuráveis e que possam comprovar o ROI (Return of Investment) das nossas ações. O que não é medido, não pode ser gerenciado.<br><br> 
+      <p class="text-base my-6">Significa que o nosso objetivo de fato é gerar resultados mensuráveis e que possam comprovar o ROI (Return of Investment) das nossas ações. O que não é medido, não pode ser gerenciado.<br><br> 
       Por isso, trabalhamos com escopos de serviços que conseguimos realmente acompanhar e monitorar toda a jornada do usuário/ lead para garantir que ele realize as conversões necessárias.<br><br> 
       Temos reuniões semanais com clientes para acompanhar seus <strong>resultados de verdade: as vendas!</strong></p>
       <a href="#" class="py-3 px-16 bg-gradient-to-b from-colina-400 to-colina-500 rounded-xl font-semibold text-lg text-neutral-50 shadow-lg">Agende agora sua sessão estratégica grátis</a>
     </div>
-    <div class="w-[40%] absolute bottom-0 right-0">
-        <img src="<?php echo get_template_directory_uri(); ?>/src/images/lucas-ceo.png" alt="Foto de Lucas Trindade, o Ceo da Colina Tech." class="w-[80] h-auto object-cover">
+    <div class="min-h-full w-full flex items-end justify-end">
+      <img class="w-full h-fit" data-aos="fade-left" data-aos-delay="600" src="<?php echo get_template_directory_uri(); ?>/src/images/lucas-ceo.png" alt="Foto de Lucas Trindade, o Ceo da Colina Tech.">
     </div>
+    
   </div>
 </section>
 
-<section class="min-h-[100dvh] flex flex-col bg-colina-400 items-center justify-around">
-  <h2 class="text-4xl font-semibold">Qual dessas soluções é a que você precisa?</h2>
-  <div class="flex w-[80%] flex-row justify-between z-10">
-    <div class="card w-1/5">
-      <span class="icon">
-        <img src="<?php echo get_template_directory_uri(); ?>/src/icons/Performance.svg" alt="">
-      </span>
-      <div class="flex flex-col h-4/6 items-start justify-between mt-4">
-        <h3 class="card-title font-semibold text-3xl">
-          Performance
-        </h3>
-        <p class="desc text-base">
-          O seu produto e/ou serviço pode ser o melhor do mundo, mas <strong>se você não é visto, não é lembrado</strong>, concorda? Apareça para o seu potencial cliente de forma ativa e aumente suas vendas de forma recorrente.
+<section class="min-h-[100dvh] py-8 flex flex-col bg-colina-400 items-center justify-around">
+  <div class="flex-flex-col max-w-7xl items-center justify-around">
+
+    <h2 class="text-2xl md:text-3xl lg:text-4xl font-semibold text-center my-12">Qual dessas soluções é a que você precisa?</h2>
+    <div class="p-6 grid justify-items-stretch grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-y-12 my-16">
+      <div class="max-md:p-[4dvw] justify-between" data-aos="fade-right" data-aos-delay="300">
+        <span class="icon">
+          <img src="<?php echo get_template_directory_uri(); ?>/src/icons/Performance.svg" alt="">
+        </span>
+        <div class="flex flex-col h-4/6 mt-4 justify-between">
+          <h3 class="card-title font-semibold text-xl lg:text-3xl">
+            Performance
+          </h3>
+          <p class="text-base">
+            O seu produto e/ou serviço pode ser o melhor do mundo, mas <strong>se você não é visto, não é lembrado</strong>, concorda? Apareça para o seu potencial cliente de forma ativa e aumente suas vendas de forma recorrente.
+          </p>
+        </div>
+      </div>
+      <div class="max-md:p-[4dvw] justify-between" data-aos="fade-right" data-aos-delay="600">
+        <span class="icon">
+          <img src="<?php echo get_template_directory_uri(); ?>/src/icons/SEO.svg" alt="">
+        </span>
+        <div class="flex flex-col h-4/6 items-start justify-between mt-4">
+          <h3 class="card-title font-semibold text-3xl">
+            SEO
+          </h3>
+          <p class="text-base">Com nossos especialistas, construiremos estratégias de SEO para que seu site alcance bons rankings nas buscas do Google. A partir disso, conseguimos <strong>aumentar o reconhecimento de marca e captar clientes passivos.</strong>
         </p>
       </div>
     </div>
-    <div class="card w-1/5">
-      <span class="icon">
-        <img src="<?php echo get_template_directory_uri(); ?>/src/icons/SEO.svg" alt="">
-      </span>
-      <div class="flex flex-col h-4/6 items-start justify-between mt-4">
-        <h3 class="card-title font-semibold text-3xl">
-          SEO
-        </h3>
-        <p class="desc text-base">Com nossos especialistas, construiremos estratégias de SEO para que seu site alcance bons rankings nas buscas do Google. A partir disso, conseguimos <strong>aumentar o reconhecimento de marca e captar clientes passivos.</strong>
-        </p>
-      </div>
-    </div>
-    <div class="card w-1/5">
+    <div class="max-md:p-[4dvw] justify-between" data-aos="fade-right" data-aos-delay="900">
       <span class="icon">
         <img src="<?php echo get_template_directory_uri(); ?>/src/icons/Marketing.svg" alt="">
       </span>
@@ -84,24 +89,25 @@
         <h3 class="card-title font-semibold text-3xl mb-6">
           Automação de Marketing
         </h3>
-        <p class="desc text-base">Manter o relacionamento com a base de clientes é fundamental para fidelização e previsibilidade do seu funil de vendas, utilizando ferramentas que ajudem na evolução da jornada de compra.
-        </p>
+        <p class="text-base">Manter o relacionamento com a base de clientes é fundamental para fidelização e previsibilidade do seu funil de vendas, utilizando ferramentas que ajudem na evolução da jornada de compra.
+          </p>
+        </div>
+      </div>
+      <div class="max-md:p-[4dvw] justify-between" data-aos="fade-right" data-aos-delay="1200">
+        <span class="icon">
+          <img src="<?php echo get_template_directory_uri(); ?>/src/icons/Site.svg" alt="">
+        </span>
+        <div class="flex flex-col h-4/6 items-start justify-between mt-4">
+          <h3 class="card-title font-semibold text-3xl">
+            Site de Conversão
+          </h3>
+          <p class="text-base">Nossa equipe com autoridade em design cria sites de conversão personalizados que são otimizados para o público-alvo. Isso garante que seja atraente, fácil de usar e altamente eficaz em termos de conversão.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="card w-1/5">
-      <span class="icon">
-        <img src="<?php echo get_template_directory_uri(); ?>/src/icons/Site.svg" alt="">
-      </span>
-      <div class="flex flex-col h-4/6 items-start justify-between mt-4">
-        <h3 class="card-title font-semibold text-3xl">
-          Site de Conversão
-        </h3>
-        <p class="desc text-base">Nossa equipe com autoridade em design cria sites de conversão personalizados que são otimizados para o público-alvo. Isso garante que seja atraente, fácil de usar e altamente eficaz em termos de conversão.
-        </p>
-      </div>
-    </div>
-  </div>
-  <a href="#" class="z-10 py-3 px-16 bg-neutral-100 rounded-xl text-colina-400 font-semibold text-lg shadow-lg">Fale com um especialista</a>
+    <a href="#" class="z-10 py-3 px-16 mt-12 my-48 hover:bg-colina-500 hover:drop-shadow-2xl transition-colors hover:text-neutral-100 bg-neutral-100 rounded-xl text-colina-400 font-semibold text-lg shadow-lg">Fale com um especialista</a>
 </section>
 
 <section class="relative z-0">
@@ -109,62 +115,58 @@
   <img class="absolute bottom-0 left-0" src="<?php echo get_template_directory_uri(); ?>/src/images/caminhada.png" alt="">
 </section>
 
-<section class="flex flex-col h-[80dvh] bg-colina-900 items-center justify-around">
-  <h2 class="font-semibold text-4xl text-colina-400">
+<section class="flex flex-col min-h-[80dvh] bg-colina-900 items-center justify-around py-12">
+  <h2 class="font-semibold text-4xl text-colina-400 py-8">
     Nossos diferenciais
   </h2>
-  <div class="flex w-[80%] space-x-32 items-stretch justify-center">
-    <div class="flex flex-col justify-center items-center w-1/8">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 my-16">
+    <div class="flex flex-col items-center justify-center" data-aos="fade-in" data-aos-delay="150" data-aos-duration="600">
       <img src="<?php echo get_template_directory_uri(); ?>/src/images/google_icon.png" alt="" class="w-auto h-[72px] mb-6">
       <h4 class="font-semibold text-neutral-50 text-3xl text-center">Google<br>Partner</h4>
     </div>
-    <div class="flex flex-col justify-center items-center w-1/8">
+    <div class="flex flex-col items-center justify-center" data-aos="fade-in" data-aos-delay="300" data-aos-duration="600">
       <img src="<?php echo get_template_directory_uri(); ?>/src/images/active_campaing_icon.png" alt="" class="w-auto h-[72px] mb-6">
       <h4 class="font-semibold text-neutral-50 text-3xl text-center">ActiveCampaing<br>Partner</h4>
     </div>
-    <div class="flex flex-col justify-center items-center w-1/8">
+    <div class="flex flex-col items-center justify-center" data-aos="fade-in" data-aos-delay="450" data-aos-duration="600">
       <img src="<?php echo get_template_directory_uri(); ?>/src/images/group_icon.png" alt="" class="w-auto h-[72px] mb-6">
       <h4 class="font-semibold text-neutral-50 text-3xl text-center">Equipe<br>Multidisciplinar</h4>
     </div>
-    <div class="flex flex-col justify-center items-center w-1/8">
+    <div class="flex flex-col items-center justify-center" data-aos="fade-in" data-aos-delay="600" data-aos-duration="600">
       <img src="<?php echo get_template_directory_uri(); ?>/src/images/many_chat_icon.png" alt="" class="w-auto h-[72px] mb-6">
       <h4 class="font-semibold text-neutral-50 text-3xl text-center">ManyChat<br>Partner</h4>
     </div>
   </div>
-  <a href="#" class="z-10 py-3 px-16 text-neutral-100 rounded-xl bg-colina-400 font-semibold text-lg shadow-lg">Fale com um especialista</a>
+  <a href="#" data-aos="fade-right" data-aos-delay="900" class="z-10 py-3 px-16 my-16 text-neutral-100 rounded-xl bg-colina-400 hover:bg-neutral-100 hover:drop-shadow-2xl transition-colors hover:text-colina-400 font-semibold text-lg shadow-lg">Fale com um especialista</a>
 </section>
 
-<section class="flex flex-col h-[80dvh] bg-colina-900 items-center justify-around">
-  <h2 class="font-semibold text-4xl text-colina-400">
+<section class="flex flex-col sm:h-[80dvh] min-h-[60dvh] bg-colina-900 items-center justify-around">
+  <h2 class="font-semibold sm:text-start text-center text-4xl text-colina-400">
     Conheça as empresas que chegaram ao topo da Colina
   </h2>
-  <div class="flex flex-col w-[80%] bg-slate-100 rounded-full p-8">
+  <div class="flex my-8 flex-col sm:w-[80%] w-full bg-slate-100 sm:rounded-full p-8">
     <?php echo get_template_part('template-parts/partners'); ?>    
   </div>
 </section>
 
-<section class="flex flex-row h-[80dvh] bg-colina-700 border-t-neutral-600 border-t items-center justify-around">
-  <div class="flex flex-col items-start justify-start space-y-16 w-[50dvw] px-[12dvw]">
-    <h2 class="font-semibold text-4xl text-neutral-50">
-      O que nossos clientes falam sobre nós?
-    </h2>
-    <a href="#" class="z-10 py-3 px-9 text-neutral-100 rounded-xl bg-gradient-to-b from-colina-400 to-colina-500 font-semibold shadow-lg">Fale com um especialista</a>
-  </div>  
-  <div class="flex flex-col items-start justify-start space-y-16 w-[50dvw] pr-[10dvw]">
-      <?php echo get_template_part('template-parts/testimonies'); ?>
-  </div>  
+<section class="flex min-h-[80dvh] max-w-[100dvww] bg-colina-700 border-t-neutral-600 border-t items-center justify-center">
+  <div class="flex flex-col lg:flex-row items-center max-w-[80%] max-lg:py-24">
+    <div class="flex flex-col justify-start space-y-16 w-full lg:w-1/2 lg:pr-12">
+      <h2 class="font-semibold text-3xl lg:text-4xl text-neutral-50">
+        O que nossos clientes falam sobre nós?
+      </h2>
+      <a href="#" class="text-center z-10 py-3 px-9 text-neutral-100 rounded-xl bg-gradient-to-b from-colina-400 to-colina-500 font-semibold shadow-lg hover:from-slate-200 hover:to-neutral-200 transition-colors hover:text-colina-500">Fale com um especialista</a>
+    </div>  
+    <div class="flex p-16">
+        <?php echo get_template_part('template-parts/testimonies'); ?>
+    </div>
+  </div>
 </section>
 
-<!-- <section class="flex flex-col h-[80dvh] bg-colina-900 items-center justify-around">
-  <h2 class="font-semibold text-4xl text-colina-400">
-    Como será sua jornada após o formulário?
-  </h2>
-  <div class="flex w-[80%] space-x-32 items-stretch justify-center">
-  </div>
-</section> -->
 
-<section class="flex bg-colina-900 min-h-[90dvh] bg-wrect bg-no-repeat bg-right-top-4 bg-cover">
-  <div class="flex flex-col w-6/12 min-h-[90dvh] items-start justify-center pl-[10dvw] mt-12">
+
+<section class="flex flex-col lg:flex-row items-center justify-center bg-[#e7e7e9] lg:bg-colina-900 min-h-[90dvh] lg:bg-wrect bg-no-repeat bg-right-top-4 bg-cover">
+  <div class="flex flex-col lg:w-6/12 min-h-[90dvh] items-start justify-center py-[10dvw] max-lg:px-[10dvw] md:pl-[10dvw] mt-12">
     <h2 class="font-bold text-4xl text-colina-400 mb-4">
       Será que as <span class="text-colina-900">soluções da Colina Tech</span> são indicadas para sua empresa? 
     </h2>
@@ -172,95 +174,77 @@
       O Inbound Marketing é para qualquer negócio, desde que esteja aberto às oportunidades do digital. Por isso, seu negócio tem muitas chances de obter resultados incríveis conosco caso se enquadre em uma ou mais das categorias abaixo:
     </p>
     <ul class="flex flex-col space-y-2">
-      <li class="flex items-center">
+      <li class="flex items-center" data-aos="fade-right" data-aos-delay="150" data-aos-duration="600" data-aos-offset="-200">
          <img class="w-auto h-8" src="<?php echo get_template_directory_uri(); ?>/src/images/lojas_virtuais.png" alt="">
         <h4 class=" font-semibold text-2xl ml-4">
         Lojas Virtuais
         </h4>
       </li>
-      <li class="flex items-center">
+      <li class="flex items-center" data-aos="fade-right" data-aos-delay="300" data-aos-duration="600" data-aos-offset="-200">
          <img class="w-auto h-8" src="<?php echo get_template_directory_uri(); ?>/src/images/saas.png" alt="">
         <h4 class=" font-semibold text-2xl ml-4">
           SaaS
         </h4>
       </li>
-      <li class="flex items-center">
+      <li class="flex items-center" data-aos="fade-right" data-aos-delay="450" data-aos-duration="600" data-aos-offset="-200">
          <img class="w-auto h-8" src="<?php echo get_template_directory_uri(); ?>/src/images/b2b.png" alt="">
         <h4 class=" font-semibold text-2xl ml-4">
           B2B
         </h4>
       </li>
-      <li class="flex items-center">
+      <li class="flex items-center" data-aos="fade-right" data-aos-delay="600" data-aos-duration="600" data-aos-offset="-200">
          <img class="w-auto h-8" src="<?php echo get_template_directory_uri(); ?>/src/images/b2c.png" alt="">
         <h4 class=" font-semibold text-2xl ml-4">
           B2C
         </h4>
       </li>
-      <li class="flex items-center">
+      <li class="flex items-center" data-aos="fade-right" data-aos-delay="750" data-aos-duration="600" data-aos-offset="-200">
         <img class="w-auto h-8" src="<?php echo get_template_directory_uri(); ?>/src/images/empresas.png" alt="">
         <h4 class=" font-semibold text-2xl ml-4">
           Empresas Locais e Nacionais
         </h4>
       </li>
     </ul>
-    <a href="#" class="py-3 px-16 mt-12 text-neutral-100 rounded-xl bg-gradient-to-b from-colina-400 to-colina-500 font-semibold text-lg shadow-xl">
+    <a href="#" data-aos="fade-in" data-aos-delay="1200" data-aos-duration="900" data-aos-offset="-300" class="py-3 px-16 mt-12 text-neutral-100 rounded-xl hover:from-slate-200 hover:from-neutral-50 hover:drop-shadow-2xl transition-colors hover:text-colina-500 bg-gradient-to-b from-colina-400 to-colina-500 font-semibold text-lg shadow-xl">
       Agendar reunião
     </a>
   </div>
-  <div class="flex w-10/12 min-h-[90dvh] items-end justify-end  -mr-48">
+  <div class="flex sm:w-10/12 sm:items-end justify-end -mr-48">
     <img class="h-fit w-max" src="<?php echo get_template_directory_uri(); ?>/src/images/computer.png" alt="">
   </div>
 </section>
 
 <section class="flex bg-[#e7e7e9] min-h-[90dvh] justify-center">
-  <div class="flex w-[80dvw]">
-    <div class="flex items-center justify-center w-1/2">
-      <img class="w-2/3 h-auto  bg-[url('./src/images/Vector.png')] bg-no-repeat bg-contain bg-top" src="<?php echo get_template_directory_uri(); ?>/src/images/coo-heitor.png" alt="">
+  <div class="flex w-[100dvw] lg:w-[80dvw] max-lg:flex-col-reverse">
+    <div class="flex items-end justify-center lg:w-1/2 pt-8 h-full">
+      <img class="h-auto" src="<?php echo get_template_directory_uri(); ?>/src/images/coo-heitor.png" alt="">
     </div>
-    <div class="flex flex-col w-1/2 space-y-8 mt-16">
-      <h2 class="font-bold text-colina-400 text-3xl">
+    <div class="flex flex-col w-full lg:w-1/2 justify-center space-y-8 mt-16 max-lg:px-[4dvw] pb-8">
+      <h2 class="text-center font-bold text-colina-400 text-4xl max-lg:mt-16">
         Perguntas frequentes
       </h2>
-      <div class="">
-        <h4 class=" text-xl font-bold" clickable>
-          1. A Colina Tech faz gestão de redes sociais?
-        </h4>
-        <p class="text-base">
-          Não. Trabalhamos apenas com os serviços de Performance, SEO e Automação de Marketing.
-        </p>
-      </div>
-      <div class="">
-        <h4 class=" text-xl font-bold" clickable>
-          2. Vocês cobram comissão?
-        </h4>
-        <p class="text-base">
-          Não. Acreditamos no resultado das nossas ações. Sendo assim, o cliente não deve pagar comissão, apenas pelo valor investido. O nosso foco é fazer com que sua empresa invista cada vez menos para ter maiores resultados, a otimização é palavra-chave.
-        </p>
-      </div>
-      <div class="">
-        <h4 class=" text-xl font-bold" clickable>
-          1. Possuem contráto mínimo?
-        </h4>
-        <p class="text-base">
-          Não. Buscamos trabalhar pelo resultado do nosso serviço. Não temos asteriscos para fidelização ou rescisão, queremos que você esteja conosco pelo nosso trabalho e não por uma obrigação contratual.
-        </p>
-      </div>
+        <?php echo get_template_part('template-parts/accordion'); ?>
     </div>
   </div>
 </section>
 
-<section class="flex bg-colina-400 justify-center">
-  <div class="flex w-[80dvw] my-[10dvh] z-10">
-    <div class="flex flex-col w-1/2">
-      <h2 class="font-semibold text-3xl">
-        Comece a sua escalada aqui!
-      </h2>
-      <p class="text-lg">
-        Preencha o formulário e faça sua empresa chegar ao topo com o Inbound Marketing pautada no Data Driven Marketing.
-      </p>
+<section class="flex bg-colina-400 justify-center items-center">
+  <div class="flex flex-col lg:flex-row justify-center max-lg:items-center lg:w-[80dvw] w-[100dvw]">
+    <div class="flex flex-col lg:w-1/2 max-sm:p-8 items-center relative">
+      <img class="h-auto" src="<?php echo get_template_directory_uri(); ?>/src/images/a.png" alt="">
+      <div class="absolute top-40 w-[22rem]">
+
+        <h2 class="font-bold text-3xl">
+          Comece aqui sua escalada!
+        </h2>
+        <p class="text-base">
+          Preencha o formulário e faça sua empresa chegar ao topo com o Inbound Marketing pautada no Data Driven Marketing.
+        </p>
+      </div>
     </div>
-    <div class="flex flex-col w-1/2">
-      <div class="border rounded-xl w-4/5 flex flex-col items-center mx-auto justify-center border-neutral-200 p-6">
+
+    <div class="flex flex-col justify-center items-center w-5/6 lg:w-1/2 z-10 py-16">
+      <div class="border bg-colina-400 bg-opacity-70 lg:bg-transparent rounded-xl w-4/5 flex flex-col items-center mx-auto justify-center border-neutral-200 p-6">
         
         <form class="">
           <div class="space-y-12">
@@ -343,7 +327,7 @@
           </div>
         </form>
         
-        <button class="py-2 px-8 mt-8 bg-neutral-100 rounded-xl text-colina-400 font-semibold text-lg shadow-xl">Agendar reunião agora</button>
+        <button class="py-2 px-8 mt-8 bg-neutral-100 rounded-xl text-colina-400 font-semibold text-lg shadow-xl hover:text-neutral-100 hover:bg-colina-400 hover:shadow-2xl transition-colors">Agendar reunião agora</button>
       </div>
     </div>
   </div>

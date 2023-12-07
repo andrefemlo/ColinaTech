@@ -4,7 +4,7 @@ $query = new WP_Query(array( 'post_type' => 'testemunha' ));
 
 if ($query->have_posts()) :
     ?>
-    <div class="slider-testimonies flex flex-col justify-center w-[30dvw]">
+    <div class="slider-testimonies flex flex-col justify-center p-8 max-w-md">
         <?php
         while ($query->have_posts()) : $query->the_post();
             $logo_da_empresa = get_field('logo_da_empresa-testemunha');
@@ -14,8 +14,8 @@ if ($query->have_posts()) :
             $depoimento = get_field('depoimento');
             ?>
 
-            <div class="flex flex-col text-neutral-50 w-full">
-                <div class="flex flex-col justify-evenly w-full space-y-8">
+            <div class="flex flex-col text-neutral-50">
+                <div class="flex flex-col justify-evenly space-y-8">
 
                     <?php if ($logo_da_empresa) : ?>
                         <img class="max-h-12 w-max" src="<?php echo esc_url($logo_da_empresa['url']); ?>" alt="<?php echo esc_attr($logo_da_empresa['alt']); ?>">

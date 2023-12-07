@@ -4,7 +4,7 @@ $query = new WP_Query(array('post_type' => 'parceiro'));
 
 if ($query->have_posts()) :
     ?>
-    <div class="slider-parceiros flex flex-row items-center justify-center h-[20dvh]">
+    <div class="slider-parceiros flex flex-row items-center justify-center sm:h-[20dvh] h-[10dvh]">
         <?php
         while ($query->have_posts()) : $query->the_post();
         $imagem = get_field('imagem_do_parceiro');
