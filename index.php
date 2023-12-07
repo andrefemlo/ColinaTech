@@ -205,7 +205,7 @@
         </h4>
       </li>
     </ul>
-    <a href="#" data-aos="fade-in" data-aos-delay="1200" data-aos-duration="900" data-aos-offset="-300" class="py-3 px-16 mt-12 text-neutral-100 rounded-xl hover:from-slate-200 hover:from-neutral-50 hover:drop-shadow-2xl transition-colors hover:text-colina-500 bg-gradient-to-b from-colina-400 to-colina-500 font-semibold text-lg shadow-xl">
+    <a href="#" data-aos="fade-in" data-aos-delay="1200" data-aos-duration="900" data-aos-offset="-300" class="py-3 px-16 mt-12 text-neutral-100 rounded-xl hover:from-slate-200 hover:to-neutral-50 hover:drop-shadow-2xl transition-colors hover:text-colina-500 bg-gradient-to-b from-colina-400 to-colina-500 font-semibold text-lg shadow-xl">
       Agendar reunião
     </a>
   </div>
